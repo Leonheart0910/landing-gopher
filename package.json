@@ -4,7 +4,6 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "postbuild": "next-sitemap",
     "start": "next start",
     "update": "ncu -u && npm i",
     "build-check": "cross-env ANALYZE=true npm run build",
