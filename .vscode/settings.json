@@ -1,0 +1,125 @@
+{
+  "cSpell.words": [
+    "adipisicing",
+    "aliquid",
+    "amet",
+    "changefreq",
+    "classname",
+    "consequuntur",
+    "cssnano",
+    "cumque",
+    "distinctio",
+    "eligendi",
+    "elit",
+    "excepturi",
+    "KINGRAIN",
+    "lastmod",
+    "laudantium",
+    "Mashey",
+    "MBIG",
+    "molestias",
+    "msapplication",
+    "mstile",
+    "nbps",
+    "Noto",
+    "obcaecati",
+    "oinochoe",
+    "passhref",
+    "postbuild",
+    "quidem",
+    "quisquam",
+    "repellendus",
+    "rerum",
+    "saepe",
+    "Sukhbir",
+    "tailwindcss",
+    "Vero"
+  ],
+  "editor.tabSize": 2,
+  "editor.detectIndentation": false,
+  "search.exclude": {
+    "package-lock.json": true
+  },
+  "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": ["source.addMissingImports", "source.fixAll.eslint"],
+  "[json][jsonc][yaml]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "tailwindCSS.includeLanguages": {
+    "javascript": "javascript",
+    "html": "HTML"
+  },
+  "editor.quickSuggestions": {
+    "strings": true
+  },
+  "css.validate": false,
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
+  "prettier.ignorePath": ".gitignore",
+  "gitmoji.onlyUseCustomEmoji": true,
+  "gitmoji.addCustomEmoji": [
+    {
+      "emoji": "✨",
+      "code": ":sparkles:",
+      "description": "[feature] 기능 및 코드 추가"
+    },
+    {
+      "emoji": "🔥",
+      "code": ":fire:",
+      "description": "[remove] 기능 및 코드 제거"
+    },
+    {
+      "emoji": "🎨",
+      "code": ":art:",
+      "description": "[style] 디자인 관련 작업"
+    },
+    {
+      "emoji": "➕",
+      "code": ":heavy_plus_sign:",
+      "description": "[add] 파일 추가"
+    },
+    {
+      "emoji": "➖",
+      "code": ":heavy_minus_sign:",
+      "description": "[remove] 파일 제거"
+    },
+    {
+      "emoji": "🏗️",
+      "code": ":card_file_box:",
+      "description": "[structure] 프로젝트 구조 변경"
+    },
+    {
+      "emoji": "🐛",
+      "code": ":bug:",
+      "description": "[fix] 버그 수정"
+    },
+    {
+      "emoji": "🚑",
+      "code": ":ambulance:",
+      "description": "[hotfix] 치명적인 버그 수정"
+    },
+    {
+      "emoji": "♻️",
+      "code": ":recycle:",
+      "description": "[refactor] 코드 리팩토링"
+    },
+    {
+      "emoji": "📝",
+      "code": ":memo:",
+      "description": "[docs] 문서작성 및 편집"
+    },
+    {
+      "emoji": "🚀",
+      "code": ":rocket:",
+      "description": "[deploy] 프로젝트 배포"
+    },
+    {
+      "emoji": "🎉",
+      "code": ":tada:",
+      "description": "[init] 프로젝트 시작"
+    }
+  ]
+}

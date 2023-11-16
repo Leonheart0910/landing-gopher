@@ -1,0 +1,19 @@
+# 이 파일은 프로젝트의 후원을 받기 위한 설정을 합니다.
+
+# GitHub Sponsors를 통한 후원 설정
+github: [username]
+
+# Patreon을 통한 후원 설정
+patreon: [username]
+
+# Open Collective를 통한 후원 설정
+open_collective: [username]
+
+# Ko-fi를 통한 후원 설정
+ko_fi: [username]
+
+# Tidelift를 통한 후원 설정
+tidelift: [username]
+
+# Custom은 사용자가 정의한 후원 링크를 추가할 수 있습니다.
+custom: [url]
