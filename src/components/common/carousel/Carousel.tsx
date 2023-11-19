@@ -2,7 +2,7 @@ import type { MutableRefObject } from 'react';
 import React, { useEffect, useRef, useState } from 'react';
 import { ResponsiveContainer, StackedCarousel } from 'react-stacked-center-carousel';
 
-import Card from './Card';
+import Card from './card/Card';
 import * as SC from './Carousel.styled';
 
 export interface ICarouselData {

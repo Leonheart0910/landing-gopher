@@ -1,6 +1,7 @@
 import { useState } from 'react';
 
 import { FramerMotion } from '../common/framer/FramerMotion';
+import * as S from './Faq.styled';
 
 export interface IFaqProps {
   readonly faqData: IFaqInfo[];
@@ -51,16 +52,19 @@ const Faq = ({ faqData }: IFaqProps) => {
       setOpenItem(index);
     }
   };
+
   return (
     <ol className="mt-10 w-full lg:mt-28">
       {faqData?.map(({ question, answer }: IFaqInfo, index: number) => {
         return (
-          <li key={index} className="qna mt-3">
+          <li key={index} className="mt-3">
             <FramerMotion delay={(index + 1) * 0.3}>
-              <div onClick={() => toggleItem(index)} className={`q ${openItem === index ? 'active' : ''}`}>
+              <S.Question onClick={() => toggleItem(index)} className={`${openItem === index ? '!rounded-b-none' : ''}`}>
+                <S.QuestionIconVertical className={`${openItem === index ? 'hidden' : ''}`} />
+                <S.QuestionIconHorizon />
                 {question}
-              </div>
-              {openItem === index && <div className="a">{answer}</div>}
+              </S.Question>
+              {openItem === index && <S.Answer>{answer}</S.Answer>}
             </FramerMotion>
           </li>
         );

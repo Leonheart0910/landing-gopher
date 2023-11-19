@@ -7,9 +7,9 @@ import { LiaEye, LiaEyeSlash } from 'react-icons/lia';
 import { AppConfig } from '@/utils/AppConfig';
 
 import { Button } from '../common/button/Button';
-import { pageEffect } from '../common/framer/pageEffect';
+import { pageEffect } from '../common/framer/effects/pageEffect';
 import { Input } from '../common/input/Input';
-import { SectionWrap } from '../layout/section/SectionWrap';
+import * as S from './Register.styled';
 
 const Register = () => {
   const [isVisible, setIsVisible] = useState<boolean>(false);
@@ -18,8 +18,8 @@ const Register = () => {
     setIsVisible(!isVisible);
   };
   return (
-    <motion.div initial="initial" animate="in" exit="out" transition={{ duration: 0.8 }} variants={pageEffect}>
-      <SectionWrap className="register">
+    <motion.div initial="initial" animate="in" exit="out" transition={{ duration: 1.2 }} variants={pageEffect}>
+      <S.Register>
         <div className="mx-auto w-full max-w-[580px] bg-[rgba(255,255,255,.9)] p-5 sm:p-10">
           <Image src={`/assets/images/logo.png`} alt={AppConfig.title!} width={249} height={55} priority className="mx-auto sm:mx-0" />
           <div className="mt-10 flex flex-col items-center sm:mt-24">
@@ -58,7 +58,7 @@ const Register = () => {
             </p>
           </form>
         </div>
-      </SectionWrap>
+      </S.Register>
     </motion.div>
   );
 };

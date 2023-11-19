@@ -1,6 +1,6 @@
 import type { ReactNode } from 'react';
 
-interface ISectionWrapProps {
+export interface ISectionWrapProps {
   readonly children: ReactNode;
   readonly className?: string;
 }

@@ -6,6 +6,7 @@ import Carousel from '../common/carousel/Carousel';
 import { FramerMotion } from '../common/framer/FramerMotion';
 import { Section } from '../layout/section/Section';
 import { SectionWrap } from '../layout/section/SectionWrap';
+import * as S from './Introduce.styled';
 
 const carouselData: ICarouselData[] = [
   {
@@ -34,10 +35,11 @@ const carouselData: ICarouselData[] = [
 const Introduce = () => {
   return (
     <>
-      <SectionWrap className="introduce overflow-hidden">
-        <div className="introduce_bg"></div>
+      <S.Introduce className="overflow-hidden">
+        <S.IntroduceBg />
         <Section className="relative z-0 flex items-center justify-between" yPadding="py-16">
-          <div className="box">
+          <S.Box>
+            <S.BoxBg />
             <FramerMotion delay={0.4}>
               <h3 className="break-keep text-3xl font-medium leading-normal text-[#5956e9] max-lg:text-center sm:text-4xl lg:text-5xl">
                 이커머스 업무 툴에&nbsp;
@@ -59,10 +61,10 @@ const Introduce = () => {
                 GOPHER SOFT
               </p>
             </FramerMotion>
-          </div>
+          </S.Box>
           <Image src={`/assets/images/introduce_mobile.png`} alt="" width={562} height={710} className="-mr-52 max-lg:hidden xl:-mr-72" />
         </Section>
-      </SectionWrap>
+      </S.Introduce>
       <SectionWrap className="bg-white">
         <Section yPadding="py-20">
           <FramerMotion delay={0.3}>
@@ -81,10 +83,12 @@ const Introduce = () => {
                 <Image src={`/assets/images/introduce_laptop.png`} alt="" width={710} height={537} />
               </div>
             </FramerMotion>
-            <ul className="boxes shrink-0 lg:ml-2 lg:w-[53%]">
-              <li className="mb-5 flex border border-solid border-gray-100 p-3 shadow-md max-sm:flex-col sm:p-5">
-                <FramerMotion delay={0.2}>
-                  <i className="check"></i>
+            <ul className="shrink-0 lg:ml-2 lg:w-[53%]">
+              <li className="mb-5 border border-solid border-gray-100 p-3 shadow-md sm:p-5">
+                <FramerMotion delay={0.2} className="flex max-sm:flex-col">
+                  <S.Circle>
+                    <S.CheckIcon />
+                  </S.Circle>
                   <div className="sm:pl-3">
                     <strong className="block break-keep text-xl font-bold leading-normal max-sm:text-center">자동 상품 소싱</strong>
                     <div className="mt-2 break-keep leading-normal text-[#6c6c72] max-sm:text-center">
@@ -93,9 +97,11 @@ const Introduce = () => {
                   </div>
                 </FramerMotion>
               </li>
-              <li className="mb-5 flex border border-solid border-gray-100 p-3 shadow-md max-sm:flex-col sm:p-5">
-                <FramerMotion delay={0.4}>
-                  <i className="check"></i>
+              <li className="mb-5 border border-solid border-gray-100 p-3 shadow-md sm:p-5">
+                <FramerMotion delay={0.4} className="flex max-sm:flex-col">
+                  <S.Circle>
+                    <S.CheckIcon />
+                  </S.Circle>
                   <div className="sm:pl-3">
                     <strong className="block break-keep text-xl font-bold leading-normal max-sm:text-center">자동 상세페이지 제작 &amp; 상품 등록</strong>
                     <div className="mt-2 break-keep leading-normal text-[#6c6c72] max-sm:text-center">
@@ -104,9 +110,11 @@ const Introduce = () => {
                   </div>
                 </FramerMotion>
               </li>
-              <li className="mb-5 flex border border-solid border-gray-100 p-3 shadow-md max-sm:flex-col sm:p-5">
-                <FramerMotion delay={0.6}>
-                  <i className="check"></i>
+              <li className="mb-5 border border-solid border-gray-100 p-3 shadow-md sm:p-5">
+                <FramerMotion delay={0.6} className="flex max-sm:flex-col">
+                  <S.Circle>
+                    <S.CheckIcon />
+                  </S.Circle>
                   <div className="sm:pl-3">
                     <strong className="block break-keep text-xl font-bold leading-normal max-sm:text-center">자동 결제</strong>
                     <div className="mt-2 break-keep leading-normal text-[#6c6c72] max-sm:text-center">
@@ -137,8 +145,8 @@ const Introduce = () => {
           <Image src={`/assets/images/introduce_bg_chart.jpg`} alt="" width={1440} height={1026} />
         </div>
       </SectionWrap>
-      <SectionWrap className="introduce">
-        <div className="introduce_bg"></div>
+      <S.Introduce>
+        <S.IntroduceBg />
         <Section className="relative">
           <h3 className="sr-only">고퍼소퍼트, 대시보드</h3>
           <ul className="flex justify-between max-md:mt-4 max-md:flex-col">
@@ -180,7 +188,7 @@ const Introduce = () => {
             </li>
           </ul>
         </Section>
-      </SectionWrap>
+      </S.Introduce>
       <SectionWrap>
         <Section yPadding="py-20 lg:py-60">
           <FramerMotion delay={0.5}>
@@ -201,8 +209,8 @@ const Introduce = () => {
           <Image src={`/assets/images/introduce_bg_tech.jpg`} alt="" width={1180} height={663} className="mt-8" />
         </Section>
       </SectionWrap>
-      <SectionWrap className="introduce lg:pb-32">
-        <div className="introduce_bg"></div>
+      <S.Introduce className="lg:pb-32">
+        <S.IntroduceBg />
         <Section className="relative text-center">
           <FramerMotion delay={0.4}>
             <h3 className="break-keep text-2xl font-bold leading-normal text-white lg:text-3xl">서비스를 위한 가장 효율적인 인력으로 구성</h3>
@@ -218,7 +226,7 @@ const Introduce = () => {
             <Image src={`/assets/images/introduce_video_bg.png`} alt="" width="770" height="320" />
           </div>
         </Section>
-      </SectionWrap>
+      </S.Introduce>
       <SectionWrap className="bg-[#f2f6ff] lg:pt-48">
         <Section className="relative text-center">
           <FramerMotion delay={0.1}>
@@ -232,58 +240,58 @@ const Introduce = () => {
             </p>
           </FramerMotion>
           <ul className="mt-14 flex justify-between max-lg:flex-col lg:mt-24">
-            <li className="team">
-              <FramerMotion delay={0.2}>
+            <S.Team>
+              <S.TeamList delay={0.2}>
                 <svg width="220" height="226">
                   <circle cx="110" cy="113" r="108" stroke="#6b68eb" strokeLinecap="round" strokeWidth="4" strokeDasharray="90" fill="none" />
                   <image href="/assets/images/introduce_profile_kei.png" x="7" y="7" width="206" height="212" />
                 </svg>
                 <strong className="mt-10 text-4xl font-bold">KEI</strong>
                 <p className="mt-5 h-24 text-left text-xl font-medium leading-normal text-gray-600">CEO</p>
-                <ul className="dots">
-                  <li>3회 창업</li>
-                  <li>(전)KINGRAIN 해외실무대표</li>
-                  <li>11년 중국 유학/업무 경험</li>
-                </ul>
-              </FramerMotion>
-            </li>
-            <li className="team">
-              <FramerMotion delay={0.5}>
+                <S.ProfileHistory>
+                  <S.ProfileHistoryList>3회 창업</S.ProfileHistoryList>
+                  <S.ProfileHistoryList>(전)KINGRAIN 해외실무대표</S.ProfileHistoryList>
+                  <S.ProfileHistoryList>11년 중국 유학/업무 경험</S.ProfileHistoryList>
+                </S.ProfileHistory>
+              </S.TeamList>
+            </S.Team>
+            <S.Team>
+              <S.TeamList delay={0.5}>
                 <svg width="220" height="226">
                   <circle cx="110" cy="113" r="108" stroke="#6b68eb" strokeLinecap="round" strokeWidth="4" strokeDasharray="90" fill="none" />
                   <image href="/assets/images/introduce_profile_john.png" x="7" y="7" width="206" height="212" />
                 </svg>
                 <strong className="mt-10 text-4xl font-bold">JOHN</strong>
                 <p className="mt-5 h-24 text-left text-xl font-medium leading-normal text-gray-600">
-                  UI/UX 디자이너 <br className="max-lg:hidden" />
+                  UI/UX 디자이너 <br />
                   판매 프로세스 개발
                 </p>
-                <ul className="dots">
-                  <li>5년 온라인 판매</li>
-                  <li>2년 온라인 판매 강의</li>
-                  <li>7년 중국 유학/업무 경험</li>
-                </ul>
-              </FramerMotion>
-            </li>
-            <li className="team">
-              <FramerMotion delay={0.8}>
+                <S.ProfileHistory>
+                  <S.ProfileHistoryList>5년 온라인 판매</S.ProfileHistoryList>
+                  <S.ProfileHistoryList>2년 온라인 판매 강의</S.ProfileHistoryList>
+                  <S.ProfileHistoryList>7년 중국 유학/업무 경험</S.ProfileHistoryList>
+                </S.ProfileHistory>
+              </S.TeamList>
+            </S.Team>
+            <S.Team>
+              <S.TeamList delay={0.8}>
                 <svg width="220" height="226">
                   <circle cx="110" cy="113" r="108" stroke="#6b68eb" strokeLinecap="round" strokeWidth="4" strokeDasharray="90" fill="none" />
                   <image href="/assets/images/introduce_profile_leon.png" x="7" y="7" width="206" height="212" />
                 </svg>
                 <strong className="mt-10 text-4xl font-bold">LEON</strong>
                 <p className="mt-5 h-24 text-left text-xl font-medium leading-normal text-gray-600">GOPHER AI 개발</p>
-                <ul className="dots">
-                  <li>5년 S/W 개발</li>
-                  <li>MBIG 의료 Big data 개발</li>
-                </ul>
-              </FramerMotion>
-            </li>
+                <S.ProfileHistory>
+                  <S.ProfileHistoryList>5년 S/W 개발</S.ProfileHistoryList>
+                  <S.ProfileHistoryList>MBIG 의료 Big data 개발</S.ProfileHistoryList>
+                </S.ProfileHistory>
+              </S.TeamList>
+            </S.Team>
           </ul>
         </Section>
       </SectionWrap>
-      <SectionWrap className="introduce">
-        <div className="introduce_bg"></div>
+      <S.Introduce>
+        <S.IntroduceBg />
         <Section className="relative text-center" maxScreen="xLarge">
           <FramerMotion>
             <h3 className="text-3xl font-bold text-white">고객 만족도</h3>
@@ -291,7 +299,7 @@ const Introduce = () => {
             <Carousel className="mt-10 lg:mt-32" slideWidth={760} carouselData={carouselData} />
           </FramerMotion>
         </Section>
-      </SectionWrap>
+      </S.Introduce>
       <SectionWrap>
         <Section yPadding="lg:py-44 py-20">
           <FramerMotion delay={0.3}>

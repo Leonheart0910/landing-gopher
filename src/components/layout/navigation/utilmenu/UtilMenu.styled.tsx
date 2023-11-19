@@ -1,6 +1,6 @@
 import tw from 'tailwind-styled-components';
 
-import type { ISIsDrawer } from './Menu.styled';
+import type { ISIsDrawer } from '../menu/Menu.styled';
 
 interface IUtilMenuList extends ISIsDrawer {}
 interface IUtilMenu extends ISIsDrawer {

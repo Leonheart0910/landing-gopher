@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { RxHamburgerMenu } from 'react-icons/rx';
 
+import { Menu } from '../menu/Menu';
 import * as S from './Drawer.styled';
-import { Menu } from './Menu';
 
 const Drawer = () => {
   const [isOpen, setIsOpen] = useState(false);

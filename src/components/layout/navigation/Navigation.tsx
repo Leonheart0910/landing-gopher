@@ -3,10 +3,10 @@ import Link from 'next/link';
 
 import { AppConfig } from '@/utils/AppConfig';
 
-import Drawer from './Drawer';
-import { Menu } from './Menu';
+import Drawer from './drawer/Drawer';
+import { Menu } from './menu/Menu';
 import * as S from './Navigation.styled';
-import { UtilMenu } from './UtilMenu';
+import { UtilMenu } from './utilmenu/UtilMenu';
 
 const Navigation = () => {
   return (
